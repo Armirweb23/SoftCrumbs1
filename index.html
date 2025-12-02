@@ -1,0 +1,134 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soft Crumbs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function shfaqFaleminderit(event) {
+      event.preventDefault();
+      document.body.innerHTML = '<div class="faleminderit"><h1>Faleminderit për porosinë tuaj!</h1><p>Porosia juaj është pranuar dhe do të dërgohet së shpejti.</p><a href="index.html">Kthehu pas</a></div>';
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Soft Crumbs</h1>
+    <p>"The Side Soft of Crumbs"</p>
+  </header>
+
+  <section class="category">Cakes</section>
+  <section class="products">
+    <div class="product">
+      <h3>Smiley Cakes</h3>
+      <span class="price">2.00€</span>
+    </div>
+    <div class="product">
+      <h3>Flower Cakes</h3>
+      <span class="price">2.00€</span>
+    </div>
+    <div class="product">
+      <h3>Spider Cakes</h3>
+      <span class="price">2.00€</span>
+    </div>
+    <div class="product">
+      <h3>Fruit Cakes</h3>
+      <span class="price">1.80€</span>
+    </div>
+    <div class="product">
+      <h3>Bueno Cakes</h3>
+      <span class="price">2.00€</span>
+    </div>
+    <div class="product">
+      <h3>Pistachio Cakes</h3>
+      <span class="price">4.00€</span>
+    </div>
+  </section>
+
+  <section class="category">Cupcakes</section>
+  <section class="products">
+    <div class="product">
+      <h3>Heart Cupcakes</h3>
+      <span class="price">1.50€</span>
+    </div>
+    <div class="product">
+      <h3>Monster Cupcakes</h3>
+      <span class="price">1.70€</span>
+    </div>
+    <div class="product">
+      <h3>Rainbow Cupcakes</h3>
+      <span class="price">1.70€</span>
+    </div>
+    <div class="product">
+      <h3>Gummyworm Cupcakes</h3>
+      <span class="price">1.70€</span>
+    </div>
+    <div class="product">
+      <h3>Snowman Cupcakes</h3>
+      <span class="price">1.90€</span>
+    </div>
+    <div class="product">
+      <h3>Spring Cupcakes</h3>
+      <span class="price">1.50€</span>
+    </div>
+  </section>
+  <h2 class="category">Brownie</h2>
+  <div class="products">
+    <div class="product">
+      <h3>Heart Brownie</h3>
+      <span class="price">1.20€</span>
+    </div>
+    <div class="product">
+      <h3>Star Brownie</h3>
+      <span class="price">1.20€</span>
+    </div>
+  </div>
+
+  <section class="order-form">
+    <h2>Porosit tani</h2>
+    <form onsubmit="shfaqFaleminderit(event)">
+      <label for="name">Emri:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="surname">Mbiemri:</label>
+      <input type="text" id="surname" name="surname" required>
+
+      <label for="phone">Numri i telefonit:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">Adresa e dërgimit:</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="cakes">Zgjidh tortat:</label>
+      <select id="cakes" name="cakes" multiple required>
+        <option value="smiley">Smiley Cakes</option>
+        <option value="flower">Flower Cakes</option>
+        <option value="spider">Spider Cakes</option>
+        <option value="fruit">Fruit Cakes</option>
+        <option value="bueno">Bueno Cakes</option>
+        <option value="pistachio">Pistachio Cakes</option>
+        <option value="heart">Heart Cupcakes</option>
+        <option value="monster">Monster Cupcakes</option>
+        <option value="rainbow">Rainbow Cupcakes</option>
+        <option value="gummyworm">Gummyworms Cupcakes</option>
+        <option value="snowman">Snowman Cupcakes</option>
+        <option value="spring">Spring Cupcakes</option>
+      </select>
+
+      <button type="submit">Dërgo Porosinë</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>LOKACIONI: PRISHTINË</p>
+    <p>PUNUAR PËR: SOFT CRUMBS COMPANY</p>
+    <p>PËR INFO KONTAKTO: +383 45 321 093</p>
+  </footer>
+</body>
+
+</html>
